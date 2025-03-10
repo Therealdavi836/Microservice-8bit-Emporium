@@ -1,12 +1,69 @@
-# React + Vite
+# 🎮 Tienda de Videojuegos - Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción
+Este es el frontend de la **Tienda de Videojuegos**, desarrollado con **React**. La aplicación permite a los usuarios explorar, comprar y gestionar videojuegos, mientras que los administradores pueden administrar los productos, categorías y usuarios del sistema. Se conecta con un backend en **Laravel** mediante una API REST.
 
-Currently, two official plugins are available:
+## Link de acceso al repositorio del backend:
+Repositorio: https://github.com/Therealdavi836/8bit-Emporium.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características
+- 🔹 **Interfaz moderna y responsive** con React y Tailwind CSS.
+- 🔹 **Gestión de usuarios**: Autenticación con JWT.
+- 🔹 **Consumo de API REST** desde el backend en Laravel.
+- 🔹 **Carrito de compras** con almacenamiento en el estado global.
+- 🔹 **Dashboard de administración** para gestionar videojuegos y ventas.
+- 🔹 **Rutas protegidas** según roles de usuario (cliente y administrador).
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
+- **Framework**: React
+- **Estado global**: Context API / Redux (según implementación)
+- **Estilos**: Tailwind CSS
+- **Autenticación**: JWT + Middleware
+- **Gestión de dependencias**: Yarn / NPM
+- **Conexión con API**: Axios / Fetch
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Estructura del Proyecto
+```
+📦 videogame-store-frontend
+ ┣ 📂 src
+ ┃ ┣ 📂 components (Componentes reutilizables)
+ ┃ ┣ 📂 pages (Páginas principales)
+ ┃ ┣ 📂 services (Consumo de API)
+ ┃ ┣ 📂 context (Gestión de estado global)
+ ┣ 📜 .env
+ ┣ 📜 package.json
+ ┣ 📜 README.md
+```
+
+## ⚡ Instalación
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/videogame-store-frontend.git
+   cd videogame-store-frontend
+   ```
+2. Instala las dependencias:
+   ```bash
+   yarn install # o npm install
+   ```
+3. Crea el archivo `.env` y configura la URL de la API:
+   ```env
+   REACT_APP_API_URL=http://localhost:8000/api
+   ```
+4. Inicia el servidor de desarrollo:
+   ```bash
+   yarn start # o npm start
+   ```
+5. Accede a la aplicación en `http://localhost:3000`
+
+## 👤 Roles y Accesos
+- **Administrador**: Acceso al dashboard de gestión.
+- **Cliente**: Puede explorar videojuegos y realizar compras.
+
+## 📜 Licencia
+Este proyecto está bajo la **Licencia MIT**.
+- El proyecto fue desarrollado y presentado para los docentes
+- **Docente encargado**: Valentina Tabares Morales
+- **Docente auxiliar**: Jose Albeiro Montes Gil
+---
+💡 *Contribuciones y mejoras son bienvenidas.* 🚀
+
